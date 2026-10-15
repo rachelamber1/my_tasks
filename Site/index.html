@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка "Обо мне"</title>
+</head>
+<body>
+<header class="header">
+    <h1 class="logo">Логачева Лера</h1>
+    <nav class="menu">
+        <a href="#about">Обо мне</a>
+        <a href="#interests">Интересы</a>
+        <a href="#goals">Цели</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#sites">Любимые сайты</a>
+        <a href="#plans">Планы</a>
+        <a href="#video" class="vid">Видео</a>
+        <a href="interests.html" class="int">Мои интересы</a>
+        <a href="validation.html" class="valid">Регистрация</a>
+    </nav>
+</header>
+<main>
+    <section class="personal" id="about">
+        <figure class="personal-photo">
+            <img src="images/b2586f8eb5561542e587aded807478e8.jpg" alt="Моё фото">
+            <figcaption>Это я</figcaption>
+        </figure>
+        <div class="personal-text">
+            <h2>Обо мне</h2>
+            <p>Меня зовут Лера. Я учусь на втором курсе. Моя специальность 09.02.07.</p>
+        </div>
+    </section>
+    <section id="interests">
+        <h2>Мои интересы</h2>
+        <ul>
+            <li>Баскетбол</li>
+            <li>Видеоигры</li>
+            <li>Книги</li>
+        </ul>
+    </section>
+    <section id="goals">
+        <h2>Цели</h2>
+        <ol>
+            <li>Научиться уверенно программировать</li>
+            <li>Закончить обучение</li>
+            <li>Найти работу</li>
+        </ol>
+    </section>
+    <article id="achievements">
+        <h3>Мои достижения</h3>
+        <p>Закончила первый курс на все автоматы</p>
+    </article>
+    <aside>
+        <p><strong>Интересно:</strong> За весь год я пропустила максимум десять пар</p>
+    </aside>
+    <section id="plans">
+        <h2>Планы на 2026–2027 год</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Первый семестр</th>
+                    <th>Второй семестр</th>
+                    <th>Лето</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Изучить SQL</td>
+                    <td>Изучить JS</td>
+                    <td>Сдать учебную практику</td>
+                </tr>
+                <tr>
+                    <td>Знать уверенно HTML</td>
+                    <td>Изучить Python</td>
+                    <td>Сдать производственную практику</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Знать уверенно CSS</td>
+                    <td>Изучить Figma</td>
+                    <td>Продолжить практиковать навыки</td>
+                </tr>
+                <tr>
+                    <td>Изучить анимации CSS</td>
+                    <td>Сдать итоговый проект</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Закончить год на автоматы</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section id="sites">
+        <h2>Любимые сайты</h2>
+        <ol>
+            <li><a href="https://aliexpress.ru/">Aliexpress</a></li>
+            <li><a href="https://www.kinopoisk.ru/">Кинопоиск</a></li>
+            <li><a href="https://market.yandex.ru/">Яндекс.Маркет</a></li>
+            <li><a href="https://www.hbo.com/">HBO</a></li>
+            <li><a href="https://www.imdb.com/">IMDb</a></li>
+        </ol>
+    </section>
+   <section class="video-section" id="video">
+    <h2>Моя любимая видеоигра</h2>
+    <p>The only thing we can do. We fight or we die!(Shepard).</p>
+    <video controls poster="images/preview.jpg" preload="metadata">
+        <source src="video/clip.mp4" type="video/mp4">
+        <track kind="subtitles" src="video/subtitles.vtt" srclang="ru" label="Русские субтитры" default>
+        <p>Браузер не поддерживает видеоплеер.
+            <a href="video/clip.mp4" download>Скачать видеофайл</a>.
+        </p>
+    </video>
+</section>
+    <section id="playlist">
+    <h2>Мой плейлист</h2>
+    <div class="playlist-header">
+        <img src="images/c325ba02207e45eb9558f47643bb348e.jpg" alt="Обложка плейлиста">
+        <p>Я очень люблю саундтреки из этой части Mass Effect</p>
+    </div>
+    <div class="playlist-tracks">
+        <article class="audio-block">
+            <h3>Название: Leaving Earth</h3>
+            <p>Исполнитель: Clint Mansell</p>
+            <audio src="audio/mass_effect_3_02. Leaving Earth.mp3" controls muted></audio>
+            <p class="note">🔇 Начальное отключение звука</p>
+        </article>
+        <article class="audio-block">
+            <h3>Название: The Fate of the Galaxy</h3>
+            <p>Исполнитель: Sam Hulick</p>
+            <audio src="audio/mass_effect_3_01. The Fate of the Galaxy.mp3" controls preload="metadata"></audio>
+            <p class="note">📥 Предварительная загрузка данных</p>
+        </article>
+        <article class="audio-block">
+            <h3>Название: I Was Lost Without You</h3>
+            <p>Исполнитель: Sam Hulick</p>
+            <audio src="audio/mass_effect_3_18. I Was Lost Without You.mp3" controls loop></audio>
+            <p class="note">🔂 Этот трек повторяется после завершения</p>
+        </article>
+    </div>
+</section>
+</main>
+<footer>
+    <p>© 2026 Логачева Лера. Все права защищены.</p>
+    <p>Контакты: +7******75**</p>
+</footer>
+</body>
+</html>

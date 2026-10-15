@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <link rel="stylesheet" href="style1.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <h2>Вход</h2>
+      <form action="auth.php" method="POST">
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Войти</button>
+      </form>
+    </section>
+    <section>
+      <h2>Регистрация</h2>
+      <form action="register.php" method="POST">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" maxlength="50" required>
+        <label for="reg-email">Электронная почта:</label>
+        <input type="email" id="reg-email" name="reg-email" required>
+        <label for="reg-password">Пароль:</label>
+        <input type="password" id="reg-password" name="reg-password" required>
+        <label for="age">Возраст:</label>
+        <select id="age" name="age" required>
+          <option value="" disabled selected>Выберите возраст</option>
+          <option value="under18">До 18</option>
+          <option value="18-24">18-24</option>
+          <option value="25+">25 и старше</option>
+        </select>
+        <label for="about">Обо мне:</label>
+        <textarea id="reg-about" name="reg-about" maxlength="300"></textarea>
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+    </section>
+    <a href="index.html">Обратно на сайт</a>
+  </main>
+</body>
+</html>
