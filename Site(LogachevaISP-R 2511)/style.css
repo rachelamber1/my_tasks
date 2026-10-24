@@ -412,3 +412,116 @@ footer p {
     color: #2e8b76;
     font-weight: 700;
 }
+@media (max-width: 900px) {
+    .header, main, footer {
+        padding: 10px;
+    }
+    #playlist h2 {
+        width: 100%;
+    }
+    .playlist-header, .audio-block {
+        max-width: 100%;
+    }
+    .interest-card {
+        flex: 0 0 calc(50% - 10px); 
+    }
+    .info-block {
+        flex-direction: column;
+    }
+    .info-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+     .gallery-section {
+        padding: none; 
+    }
+    .gallery figure {
+        flex: 0 0 45%;
+    }
+}
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+        gap: 10px;
+        font-size: 16px; 
+    }
+    .header {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column; 
+        align-items: stretch; 
+        gap: 8px;
+        width: 100%;
+    }
+    .menu a {
+        text-align: center;
+        background-color: #F2F0FF;
+        padding: 10px;
+    }
+    .personal {
+        flex-direction: column;
+        text-align: center;
+    }
+    .personal-text h2 {
+        text-align: center;
+    }
+    .personal-photo {
+        flex: 0 0 auto;
+        width: 100%;         
+        max-width: 330px;    
+        margin: 0 auto;      
+    }
+    .personal-photo img {
+        width: 100%;         
+        height: auto;        
+        max-height: 300px;  
+        border-radius: 12px; 
+        object-fit: cover;
+    }
+    .interest-card {
+        flex: 0 0 100%; 
+    }
+    .interest-card img {
+        height: 200px;            
+        object-fit: cover;      
+        background-color: #F2F0FF;
+        padding: 8px;           
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    #playlist {
+        padding: 15px;
+    }
+    .audio-block {
+        width: 100%;
+    }
+    .audio-block audio {
+        max-width: 100%;
+    }
+    .video-section {
+        padding: 15px;
+    }
+    .gallery figure {
+        flex: 0 0 100%; 
+    }
+    .gallery img {
+       height: 270px;       
+       object-fit: cover;  
+       width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 16px; }
+    button, input, select, textarea {
+        font-size: 16px;
+    }
+}
