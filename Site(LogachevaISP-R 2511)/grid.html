@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Бенто-композиции</title>
+    <link rel="stylesheet" href="gridcss.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="index.html#video" class="vid">Видео</a>
+        <a href="interests.html" class="int">Мои интересы</a>
+        <a href="validation.html" class="valid">Регистрация</a>
+    </nav>
+</header>
+    <h1>Пять бенто-композиций</h1>
+    <section class="bento bento-5">
+        <h2>Вариант 5: Главная плитка и боковые карточки</h2>
+        <div class="grid-5">
+            <div class="item big">Главный блок</div>
+            <div class="item">Карточка 1</div>
+            <div class="item">Карточка 2</div>
+            <div class="item">Карточка 3</div>
+            <div class="item wide">Нижний ряд</div>
+        </div>
+    </section>
+    <section class="bento bento-4">
+        <h2>Вариант 4: Боковая колонка</h2>
+        <div class="grid-4">
+            <div class="item big">Высокий блок</div>
+            <div class="item">Блок 1</div>
+            <div class="item">Блок 2</div>
+            <div class="item">Блок 3</div>
+            <div class="item">Блок 4</div>
+            <div class="item">Блок 5</div>
+        </div>
+    </section>
+    <section class="bento bento-3">
+        <h2>Вариант 3: Чередование акцента</h2>
+        <div class="grid-3">
+            <div class="item block-1">Широкий 1</div>
+            <div class="item block-2">Узкий 1</div>
+            <div class="item block-3">Узкий 2</div>
+            <div class="item block-4">Широкий 2</div>
+            <div class="item block-5">Широкий 3</div>
+            <div class="item block-6">Узкий 3</div>
+        </div>
+    </section>
+    <section class="bento bento-2">
+        <h2>Вариант 2: Высокая плитка слева</h2>
+        <div class="grid-2">
+            <div class="item tall">Высокий</div>
+            <div class="item wide">Широкий верхний</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item bottom">Нижний ряд</div>
+        </div>
+    </section>
+    <section class="bento bento-1">
+        <h2>Вариант 1: Акцентные строки</h2>
+        <div class="grid-1">
+            <div class="item">Узкий</div>
+            <div class="item wide">Широкий</div>
+            <div class="item wide">Широкий 2</div>
+            <div class="item">Узкий 2</div>
+            <div class="item bottom">Длинный нижний блок</div>
+        </div>
+    </section>
+</body>
+</html>
